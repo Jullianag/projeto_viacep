@@ -1,7 +1,41 @@
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    background-color: #171616;
+}
+
+.nav-container {
+    height: 80px;
+    /* #885ba8 */
+    background-color: #c14949;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main {
+    width: 100%;
+    max-width: 900px;
+    /* fica ao centro */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-main h1 {
+    color: white;
+    font-size: 36px;
+}
+
+.contact-link {
+    color: white;
+    cursor: pointer;
 }
