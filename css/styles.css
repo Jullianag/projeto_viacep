@@ -12,8 +12,10 @@ html, body {
 
 .nav-container {
     height: 80px;
-    /* #885ba8 */
-    background-color: #c14949;
+    /* #885ba8
+        #c14949
+    */
+    background-color: #223a78;
     width: 100%;
     padding: 0 20px;
     display: flex;
@@ -38,4 +40,48 @@ html, body {
 .contact-link {
     color: white;
     cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.card-form {
+    background-color: #333;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: none;
+}
+
+.error-message {
+    margin-top: 5px;
+    color: #faa;
+}
+
+.form-input {
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 14px;
+    border: 0;
+}
+
+.form-input::placeholder {
+    color: #c9c9c9;
+}
+
+.form-input:disabled {
+    background-color: #ddd;
 }
