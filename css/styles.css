@@ -7,7 +7,8 @@
 }
 
 html, body {
-    background-color: #171616;
+    /*background-color: #171616;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#171616), to(#403c3c));
 }
 
 .nav-container {
@@ -15,11 +16,13 @@ html, body {
     /* #885ba8
         #c14949
     */
-    background-color: #223a78;
+    /*background-color: #223a78;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#223a78), to(#697bb3));
     width: 100%;
     padding: 0 20px;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #171717;
 }
 
 .nav-main {
@@ -48,12 +51,14 @@ html, body {
 }
 
 .card-form {
-    background-color: #333;
+    background-color: #292828;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 8px;
     padding: 20px;
+    border-bottom: 3px solid #222222;
+    border-right: 3px solid #222222;
 }
 
 .form-control {
@@ -108,4 +113,37 @@ html, body {
 
 .btn-right {
     margin-left: 10px;
+}
+
+.list-container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-list-item {
+    background-color: #292828;
+    color : white;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card-list-item h3 {
+    color: #223a78;
+    font-size: 18px;
+}
+
+.address-line {
+    color: white;
+    font-size: 14px;
+}
+
+.address-cep {
+    color: #7c7878;
+    font-size: 12px;
 }
