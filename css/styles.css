@@ -1,6 +1,20 @@
 @import 'modal.css';
 @import "buttons.css";
 
+:root {
+    --white: #fff;
+    --gray-cep: #7c7878;
+    --light-gray: #403c3c;
+    --gray-form: #292828;
+    --border-form: #222222;
+    --dark-gray: #171717;
+    --dark-blue: #223a78;
+    --light-red: #faa;
+    --gray-white: #c9c9c9;
+    --light-white: #ddd;
+    --gray-address: #7c7878;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,7 +25,7 @@
 html, body {
     /*background-color: #171616;*/
     /*background: -webkit-gradient(linear, left top, left bottom, from(#171616), to(#403c3c));*/
-    background-color: #403c3c;
+    background-color: var(--light-gray);
     height: auto;
 }
 
@@ -22,12 +36,12 @@ html, body {
     */
     /*background-color: #223a78;*/
     //background: -webkit-gradient(linear, left top, left bottom, from(#223a78), to(#697bb3));
-    background-color: #223a78;
+    background-color: var(--dark-blue);
     width: 100%;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #171717;
+    border-bottom: 1px solid var(--dark-gray);
 }
 
 .nav-main {
@@ -41,12 +55,12 @@ html, body {
 }
 
 .nav-main h1 {
-    color: white;
+    color: var(--white);
     font-size: 36px;
 }
 
 .contact-link {
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -56,14 +70,14 @@ html, body {
 }
 
 .card-form {
-    background-color: #292828;
+    background-color: var(--gray-form);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 8px;
     padding: 20px;
-    border-bottom: 3px solid #222222;
-    border-right: 3px solid #222222;
+    border-bottom: 3px solid var(--border-form);
+    border-right: 3px solid var(--border-form);
 }
 
 .form-control {
@@ -76,7 +90,7 @@ html, body {
 
 .error-message {
     margin-top: 5px;
-    color: #faa;
+    color: var(--light-red);
 }
 
 .form-input {
@@ -89,11 +103,11 @@ html, body {
 }
 
 .form-input::placeholder {
-    color: #c9c9c9;
+    color: var(--gray-white);
 }
 
 .form-input:disabled {
-    background-color: #ddd;
+    background-color: var(--light-white);
 }
 
 .list-container {
@@ -106,29 +120,29 @@ html, body {
 }
 
 .card-list-item {
-    background-color: #292828;
+    background-color: var(--gray-form);
     color : white;
     margin-bottom: 20px;
     width: 100%;
     max-width: 900px;
     border-radius: 8px;
     padding: 20px;
-    border-bottom: 3px solid #222222;
-    border-right: 3px solid #222222;
+    border-bottom: 3px solid var(--border-form);
+    border-right: 3px solid var(--border-form);
 }
 
 .card-list-item h3 {
-    color: #223a78;
+    color: var(--dark-blue);
     font-size: 18px;
 }
 
 .address-line {
-    color: white;
+    color: var(--white);
     font-size: 14px;
 }
 
 .address-cep {
-    color: #7c7878;
+    color: var(--gray-address);
     font-size: 12px;
 }
 

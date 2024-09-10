@@ -33,4 +33,11 @@
 .modal-content {
     color: white;
     margin-bottom: 40px;
+    display: flex;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
 }
